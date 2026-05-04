@@ -72,16 +72,16 @@ app.get("/", (req, res) => {
       font-size: 16px;
       box-sizing: border-box;
     }
-    button {
-      margin-top: 12px;
-      background: #1A2DF3;
-      color: white;
-      border: none;
-      padding: 14px 22px;
-      border-radius: 14px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+   button {
+  margin-top: 12px;
+  background: #1A2DF3;
+  color: white;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
   </style>
 </head>
 <body>
