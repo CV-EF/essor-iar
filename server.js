@@ -142,10 +142,13 @@ app.post("/chat", async (req, res) => {
     });
 
     res.json({ answer: response.text });
-  } catch (error) {
-    console.error(error);
+ } catch (error) {
+    console.error("GEMINI ERROR:", error);
+
     res.json({
-      answer: "Désolé, Essor IA rencontre un problème technique."
+      answer:
+        "Erreur technique Essor IA : " +
+        (error.message || JSON.stringify(error))
     });
   }
 });
